@@ -1,4 +1,4 @@
-package org.serlffish;
+package org.selffish;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

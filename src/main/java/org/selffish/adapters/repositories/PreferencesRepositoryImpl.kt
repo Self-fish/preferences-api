@@ -1,8 +1,8 @@
-package org.serlffish.adapters.repositories
+package org.selffish.adapters.repositories
 
-import org.serlffish.adapters.database.PreferencesDataBase
-import org.serlffish.domain.contracts.PreferencesRepository
-import org.serlffish.domain.entities.Preference
+import org.selffish.adapters.database.PreferencesDataBase
+import org.selffish.domain.contracts.PreferencesRepository
+import org.selffish.domain.entities.Preference
 import org.springframework.stereotype.Component
 
 @Component

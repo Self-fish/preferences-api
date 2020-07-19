@@ -1,6 +1,6 @@
-package org.serlffish.domain.contracts
+package org.selffish.domain.contracts
 
-import org.serlffish.domain.entities.Preference
+import org.selffish.domain.entities.Preference
 
 interface PreferencesRepository {
 

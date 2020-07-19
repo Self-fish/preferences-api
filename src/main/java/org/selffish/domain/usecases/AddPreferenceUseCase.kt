@@ -1,7 +1,7 @@
-package org.serlffish.domain.usecases
+package org.selffish.domain.usecases
 
-import org.serlffish.domain.contracts.PreferencesRepository
-import org.serlffish.domain.entities.Preference
+import org.selffish.domain.contracts.PreferencesRepository
+import org.selffish.domain.entities.Preference
 import org.springframework.stereotype.Service
 
 @Service

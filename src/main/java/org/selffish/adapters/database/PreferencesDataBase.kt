@@ -1,6 +1,6 @@
-package org.serlffish.adapters.database
+package org.selffish.adapters.database
 
-import org.serlffish.domain.entities.Preference
+import org.selffish.domain.entities.Preference
 import org.springframework.data.mongodb.repository.MongoRepository
 
 interface PreferencesDataBase: MongoRepository<Preference, String>
