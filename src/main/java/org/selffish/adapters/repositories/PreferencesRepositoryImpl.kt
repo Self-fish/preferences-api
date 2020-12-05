@@ -9,4 +9,6 @@ import org.springframework.stereotype.Component
 class PreferencesRepositoryImpl(private val dataBase: PreferencesDataBase): PreferencesRepository {
 
     override fun insert(preference: Preference): Preference = dataBase.insert(preference)
+    override fun get(deviceId: String): Preference = dataBase.findByDeviceId(deviceId)
+
 }

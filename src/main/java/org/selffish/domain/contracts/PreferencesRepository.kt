@@ -5,4 +5,5 @@ import org.selffish.domain.entities.Preference
 interface PreferencesRepository {
 
     fun insert(preference: Preference) : Preference
+    fun get(deviceId: String) : Preference
 }
