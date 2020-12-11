@@ -8,6 +8,7 @@ class PreferenceWebModelMapper {
 
     fun createPreference(webModel: PreferenceWebModel) =
         Preference(null, System.currentTimeMillis(), System.currentTimeMillis(), webModel.lightsPreferences,
+            webModel.waterTemperaturePreferences,
             webModel.deviceId)
 
 }
