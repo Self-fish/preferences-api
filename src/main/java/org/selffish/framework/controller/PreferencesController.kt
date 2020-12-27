@@ -5,6 +5,7 @@ import org.selffish.adapters.web.PreferenceWebModelMapper
 import org.selffish.domain.entities.Preference
 import org.selffish.domain.usecases.AddPreferenceUseCase
 import org.selffish.domain.usecases.GetPreferencesUseCase
+import org.selffish.framework.exceptions.PreferenceNotFoundException
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 
@@ -20,7 +21,14 @@ class PreferencesController(private val addUseCase: AddPreferenceUseCase,
     }
 
     @RequestMapping(method= [RequestMethod.GET])
-    fun getPreference(@RequestParam deviceId: String) = getUseCase.getPreference(deviceId)
+    fun getPreference(@RequestParam deviceId: String): Preference {
+        val preference = getUseCase.getPreference(deviceId)
+        if(preference.isPresent) {
+            return preference.get()
+        }
+        throw PreferenceNotFoundException()
+
+    }
 
 
 }
