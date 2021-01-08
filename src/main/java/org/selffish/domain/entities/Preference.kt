@@ -15,5 +15,5 @@ data class WaterTemperaturePreferences(val mode: Mode, val value: Double)
 data class HoursRange(val starting: String, val finishing: String)
 
 enum class Mode {
-    AUTOMATIC, MANUAL
+    AUTOMATIC, MANUAL_ON, MANUAL_OFF
 }
