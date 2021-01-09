@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      #uri: "mongodb://heroku_sxb4t7cs:h3a5cmrpf1k4pc6t0g0i7p5g93@ds229790.mlab.com:29790/heroku_sxb4t7cs"
+      uri: "mongodb+srv://admin:87Az54Pa@cluster0.ryrnh.mongodb.net/self-fish-db??retryWrites=true&w=majority"

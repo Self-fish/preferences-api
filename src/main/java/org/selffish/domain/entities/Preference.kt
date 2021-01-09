@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 
 @Document
 data class Preference(@Id val id: String?, val creationDate: Long, val updatedDate: Long,
-                      val lightsPreferences: LightPreferences, val waterPreferences: WaterTemperaturePreferences,
+                      var lightsPreferences: LightPreferences, val waterPreferences: WaterTemperaturePreferences,
                       val deviceId: String)
 
 data class LightPreferences(val mode: Mode, val range: HoursRange)
